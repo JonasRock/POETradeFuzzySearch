@@ -21,6 +21,8 @@ With fuzzy search:
 ### **Firefox**: ###
 Just install it from the Firefox Webstore [here](https://addons.mozilla.org/en-US/firefox/addon/poetrade-fuzzy-search/)
 
+NOTE: At the time of writing, the extension site for Firefox still needs to verify the extension before its up . So at the moment, it might only show an error. I hope its verified soon.
+
 ### **Chrome**: ###
 You need to install it manually. Don't worry, it's not hard:
 
