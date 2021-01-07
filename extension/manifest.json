@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "POETrade Fuzzy Search",
+  "description": "Automatically inserts ~ for fuzzy searches on patheofexile.com/trade",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.pathofexile.com/trade/*"
+      ],
+      "js": [
+        "fuzzySearch.js"
+      ]
+    }
+  ]
+}
