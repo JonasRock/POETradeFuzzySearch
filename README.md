@@ -30,14 +30,20 @@ You need to install it manually. Don't worry, it's not hard:
 2. Go to "chrome://extensions".
 3. On the top right corner, enable developer mode. You should see the "Load unpacked", "Pack extension" and "Update" buttons now.
 
-![](img/install1.jpg)
+![](img/Install1.jpg)
 
 4. Drag and drop the downloaded .crx file into the window
 
-![](img/install2.jpg)
+![](img/Install2.jpg)
 
 5. Click on "Add extension"
 
-![](img/install3.jpg)
+![](img/Install3.jpg)
 
 6. Finished. See you in game :)
+
+You might end up with this Warning:
+~~~
+"This Extension is not listed in the Chrome Web Store and may have been added without your knowledge."
+~~~
+This is not a problem, the extension should work fine regardless.
