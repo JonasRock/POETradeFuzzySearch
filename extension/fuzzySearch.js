@@ -1,5 +1,8 @@
-// Put all the javascript code here, that you want to execute after page load.
-addExtension();
+// When this script loads, the searchbars are not loaded in yet, so we need to call addExtension once they are loaded
+// We don't remove the click listener because after switching to Bulk Trade and back, the events are cleared but we
+// don't execute the script again, so we need to reattach the event listeners to the searchbars
+document.addEventListener("click",addExtension);
+document.addEventListener("keydown",addExtension);
 
 function addExtension() {
         console.log("Added Eventlistener");
