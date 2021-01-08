@@ -1,29 +1,21 @@
-// Put all the javascript code here, that you want to execute after page load.
-document.addEventListener("keydown", addExtension);
-document.addEventListener("mousedown", addExtension);
+// When this script loads, the searchbars are not loaded in yet, so we need to call addExtension once they are loaded
+// We don't remove the click listener because after switching to Bulk Trade and back, the events are cleared but we
+// don't execute the script again, so we need to reattach the event listeners to the searchbars
+document.addEventListener("click",addExtension);
+document.addEventListener("keydown",addExtension);
 
 function addExtension() {
-    document.removeEventListener("keydown", addExtension);
-    let searchBars = document.getElementsByClassName("multiselect__input");
-    for(var i = 0; i < searchBars.length; i++)
-    {
-        var element = searchBars[i];
-        if (element.placeholder === "Search Items...")
-        {
-            element.addEventListener("keydown", appendFuzzyToValue);
-            console.log("Search Items... found");
-            
-        }
-        if (element.placeholder === "+ Add Stat Filter")
-        {
-            element.addEventListener("keydown", appendFuzzyToValue);
-            console.log("+ Add Stat Filter found")
-        }
-    }
+        console.log("Added Eventlistener");
+        document.removeEventListener("keydown", addExtension);
+        var searchbar = document.querySelector("#trade > div.top > div.search-panel > div:nth-child(1) > div.search-left > div > div.multiselect__tags > input");
+        var attributeFilter = document.querySelector("#trade > div.top > div.search-panel > div.search-bar.search-advanced > div > div.search-advanced-pane.brown > div.filter-group.expanded > div.filter-group-body > div > span > div > div.multiselect__tags > input");
+        searchbar.addEventListener("keydown", appendFuzzyToValue);
+        attributeFilter.addEventListener("keydown", appendFuzzyToValue);
 }
 
 function appendFuzzyToValue(element)
 {
+    console.log("Inserted ~ into searchfield");
     if (!element.currentTarget.value.startsWith("~"))
     {
         element.currentTarget.value = "~" + element.currentTarget.value;
