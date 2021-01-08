@@ -18,6 +18,8 @@ With fuzzy search:
 
 ## Install: ##
 
+This Extension is available for **Firefox**, **Chrome** or as a **Greasemonkey** userscript
+
 ### **Firefox**: ###
 Just install it from the Firefox Webstore [here](https://addons.mozilla.org/en-US/firefox/addon/poetrade-fuzzy-search/)
 
@@ -47,3 +49,6 @@ You might end up with this Warning:
 "This Extension is not listed in the Chrome Web Store and may have been added without your knowledge."
 ~~~
 This is not a problem, the extension should work fine regardless.
+
+### **Greasemonkey or Alternatives** ###
+The `POETradeFuzzySearch.gm_script` file contains a userscript for the Greasemonkey Extension (or any of its alternatives). This should work with any browser that has a Greasemonkey extension.
