@@ -1,2 +1,3 @@
-/extension.pem
-/POETradeFuzzySearch.zip
+*.pem
+*.zip
+*.crx

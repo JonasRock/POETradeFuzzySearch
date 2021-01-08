@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.pathofexile.com/trade/*"
+        "*://*.pathofexile.com/trade*"
       ],
       "js": [
         "fuzzySearch.js"
