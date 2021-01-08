@@ -8,7 +8,6 @@ function addExtension() {
         var attributeFilter = document.querySelector("#trade > div.top > div.search-panel > div.search-bar.search-advanced > div > div.search-advanced-pane.brown > div.filter-group.expanded > div.filter-group-body > div > span > div > div.multiselect__tags > input");
         searchbar.addEventListener("keydown", appendFuzzyToValue);
         attributeFilter.addEventListener("keydown", appendFuzzyToValue);
-        addedEventlistener = true;
 }
 
 function appendFuzzyToValue(element)
