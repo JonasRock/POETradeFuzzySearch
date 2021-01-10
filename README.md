@@ -23,10 +23,10 @@ This Extension is available for **Firefox**, **Chrome** or as a **Greasemonkey**
 ### **Firefox**: ###
 Just install it from the Firefox Webstore [here](https://addons.mozilla.org/en-US/firefox/addon/poetrade-fuzzy-search/)
 
-NOTE: At the time of writing, the extension site for Firefox still needs to verify the extension before its up . So at the moment, it might only show an error. I hope its verified soon.
-
 ### **Chrome**: ###
-You need to install it manually. Don't worry, it's not hard:
+Chrome Webstore version is currently under review, might take a bit, link will be added once available.
+
+You can also install it manually. Don't worry, it's not hard:
 
 1. Download the extension from the releases tab to the right.
 2. Go to "chrome://extensions".
@@ -48,7 +48,7 @@ You might end up with this Warning:
 ~~~
 "This Extension is not listed in the Chrome Web Store and may have been added without your knowledge."
 ~~~
-This is not a problem, the extension should work fine regardless.
+This seems to sometimes still work, sometimes not. If it doesn't work, you can try using Greasemonkey as explained below or wait for the Webstore Version.
 
 ### **Greasemonkey or Alternatives** ###
 The `POETradeFuzzySearch.gm_script` file contains a userscript for the Greasemonkey Extension (or any of its alternatives). This should work with any browser that has a Greasemonkey extension.
