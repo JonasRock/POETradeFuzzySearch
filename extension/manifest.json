@@ -5,12 +5,9 @@
   "version": "0.2.0",
   "content_scripts": [
     {
-      "matches": [
-        "*://*.pathofexile.com/trade*"
-      ],
-      "js": [
-        "fuzzySearch.js"
-      ]
+      "matches": ["*://*.pathofexile.com/trade*"],
+      "js": ["fuzzySearch.js"],
+      "run_at": "document_start"
     }
   ]
 }
