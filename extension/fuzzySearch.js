@@ -4,9 +4,14 @@ console.log("FuzzySearch active");
 function appendFuzzyToTarget(e) {
     if(e.target.classList.contains("multiselect__input"))
     {
-        if(!e.target.value.startsWith("~"))
+        //When text is selected and we write a letter it wrongly gets appended to the end of the text instead of replacing it
+        //To prevent this, we only append the tilde when nothing is selected
+        if(e.target.selectionStart === e.target.selectionEnd)
         {
-            e.target.value = "~" + e.target.value;
+            if(!e.target.value.startsWith("~"))
+            {
+                e.target.value = "~" + e.target.value;
+            }
         }
     }
 }

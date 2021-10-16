@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "POETrade Fuzzy Search",
+  "name": "Path of Exile Trade - Fuzzy Search",
   "description": "Automatically inserts ~ for fuzzy searches on patheofexile.com/trade",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "content_scripts": [
     {
       "matches": [
