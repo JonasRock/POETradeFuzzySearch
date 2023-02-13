@@ -1,4 +1,6 @@
 document.body.addEventListener("keydown", appendFuzzyToTarget);
+document.body.addEventListener("paste", function(e) {setTimeout(appendFuzzyToTarget, 0, e)} );
+
 console.log("FuzzySearch active");
 
 function appendFuzzyToTarget(e) {
@@ -8,7 +10,8 @@ function appendFuzzyToTarget(e) {
         //To prevent this, we only append the tilde when nothing is selected
         if(e.target.selectionStart === e.target.selectionEnd)
         {
-            if(!e.target.value.startsWith("~"))
+            //Don't append the tilde if the first character is already a tilde or we start with a space (so we can opt out of fuzzy search)
+            if(!e.target.value.startsWith("~") && !e.target.value.startsWith(" ") && e.key !== " ")
             {
                 e.target.value = "~" + e.target.value;
             }
