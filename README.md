@@ -1,7 +1,8 @@
 # POETradeFuzzySearch
 When searching on pathofexile.com/trade, this addon inserts the tilde(~) before your search query. This enables fuzzy search, so you can be more lenient with your search.
+Start you search with a space (" ") to not use fuzzy search for this query.
 
-For example, when searching for "#% to Fire and Cold Resistance" it's enought to just write "fire cold res". Without fuzzy search, this would not find the modifier.
+For example, when searching for "#% to Fire and Cold Resistance" it's enough to just write "fire cold res". Without fuzzy search, this would not find the modifier.
 
 ---
 
