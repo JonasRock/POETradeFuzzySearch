@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Path of Exile Trade - Fuzzy Search",
   "description": "Automatically inserts ~ for fuzzy searches on patheofexile.com/trade",
   "version": "0.3.0",
